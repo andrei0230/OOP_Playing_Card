@@ -24,7 +24,16 @@
 
         public Suit Suit { get { return _suit; } }
 
-        public Rank Rank { get { return _rank; } } 
+        public Rank Rank { get { return _rank; } }
+
+        #endregion
+
+        #region Overrides
+
+        public override string ToString()
+        {
+            return $"{this.Rank} of {this.Suit}";
+        }
 
         #endregion
     }
